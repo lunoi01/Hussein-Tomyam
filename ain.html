@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Yummy Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up">A Variety Of Thai Food<br>That You Must Eat!</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Delicious Thailand food is universally regarded as some of the world’s finest. 
+                                                     The variety of Thai cuisine, especially its world-acclaimed street food, is astounding, but mainly covers noodles, stir-fries, curries, soups and salads.</p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+            <a href="receipt.html" class="glightbox btn-watch-video d-flex align-items-center"><span>Notification</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="isp_logo.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+      <!-- ======= Book A Table Section ======= -->
+      <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Book A Table</h2>
+          <p>Book <span>Your Stay</span> With Us</p>
+        </div>
+
+        <div class="row g-0">
+
+          <div class="col-lg-4 reservation-img" style="background-image: url(thai\ food.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="email" class="form-control" id="email" placeholder="Your Email" data-rule="email" data-msg="Enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="discount" class="form-control" name="discount" id="discount" placeholder="Enter code" data-rule="minlen:4" data-msg="Please enter a valid code">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="phone" class="form-control" name="phone" id="phone" placeholder="Your phone" data-rule="minlen:1">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="tableNo">Table.no : </label>
+                  <select name="table" class="form-control" id="table" placeholder="Table.no" data-rule="minlen:1">
+                    <option value="1p">No.1</option>
+                    <option value="1p">No.2</option>
+                    <option value="2p">No.3</option>
+                    <option value="2p">No.4</option>
+                    <option value="4p">No.5</option>
+                    <option value="4p">No.6</option>
+                    <option value="6p">No.7</option>
+                    <option value="6p">No.8</option>
+                    <option value="10p">No.9</option>
+                    <option value="10p">No.10</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="food">Food : </label>
+                  <select name="food" class="form-control" id="food" data-rule="minlen:1">
+                    <option value="Set A">SET A</option>
+                    <option value="Set B">SET B</option>
+                    <option value="Set C">SET C</option>
+                    <option value="Set D">SET D</option>
+                    <option value="Set E">SET E</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="beverage">Beverage : </label>
+                  <select name="beverage" class="form-control" id="beverage" data-rule="minlen:1">
+                    <option value="Watermelon">Watermelon</option>
+                    <option value="IcedCoffee">Iced Coffee</option>
+                    <option value="MilkTea">Milk Tea</option>
+                    <option value="FreshOrange">Fresh Orange</option>
+                    <option value="AppleJuice">Apple Juice</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <label for="payment">Payment Method : </label>
+                  <select name="payment" class="form-control" id="payment" data-rule="minlen:1">
+                    <option value="Cash">Cash</option>
+                    <option value="CreditCard">Credit Card</option>
+                    <option value="OnlineBanking">Online Banking</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Book a Table</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Book A Table Section -->
+  <body>
+<html>
